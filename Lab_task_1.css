@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    margin: 20px;
+}
+
+h2 {
+    color: red;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 350px;
+    padding: 6px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #888;
+    border-radius: 3px;
+}
+
+textarea {
+    width: 450px;
+    height: 100px;
+}
+
+.wide {
+    width: 450px;
+}
+
+.small-input {
+    width: 150px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin-top: 10px;
+    background: #eee;
+    border: 1px solid #777;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #ddd;
+}
