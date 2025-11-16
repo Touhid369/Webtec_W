@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Touhid Islam — Portfolio</title>
+  <meta name="author" content="Touhid Islam">
+  <meta name="description" content="Touhid Islam — Computer Science student. Portfolio showcasing projects, skills, education and contact.">
+  <meta name="keywords" content="Touhid, portfolio, web developer, computer science, projects, resume">
+  <link rel="stylesheet" href="protfolios.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Touhid Islam</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#contact">Hire me</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero container">
+      <div class="hero-text">
+        <h2>Computer Science Student • Aspiring Web Developer</h2>
+        <p>I build responsive web apps and polished portfolios. I’m currently seeking internships where I can apply full-stack web skills and learn in a team environment.</p>
+        <p class="meta-line">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn outline" href="resume.pdf" download>Download Resume</a>
+        </p>
+      </div>
+      <div class="hero-photo" aria-hidden="true">
+        <!-- Placeholder avatar -->
+        <svg width="140" height="140" viewBox="0 0 100 100" role="img" aria-label="Avatar placeholder">
+          <rect width="100" height="100" rx="12" fill="#eee"></rect>
+          <circle cx="50" cy="34" r="16" fill="#ddd"></circle>
+          <rect x="20" y="60" width="60" height="20" rx="4" fill="#ddd"></rect>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About / Biography -->
+    <section id="about" class="about container">
+      <h3>About</h3>
+      <p>Hi — I’m Touhid, a Computer Science student at AIUB focusing on web technologies, algorithms, and software development. I enjoy turning ideas into clean, user-friendly web experiences. I’m familiar with HTML, CSS, JavaScript, C/C++, and basic OpenGL (GLUT).</p>
+      <ul class="contact-quick">
+        <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+        <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+        <li><strong>Availability:</strong> Internship / Part-time</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects container">
+      <h3>Selected Projects</h3>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h4>Portfolio Website</h4>
+          <p>A responsive personal website built with semantic HTML, CSS, and small JS for form validation. Shows projects, education and contact form.</p>
+          <p class="project-meta">Tech: HTML • CSS • JavaScript</p>
+          <a class="project-link" href="#" target="_blank" rel="noopener">Live demo</a>
+        </article>
+
+        <article class="project-card">
+          <h4>Rural-to-Urban Scene (OpenGL)</h4>
+          <p>Graphics project using OpenGL + GLUT that renders a scene with moving ambulance, buildings and sky.</p>
+          <p class="project-meta">Tech: C++ • OpenGL • GLUT</p>
+        </article>
+
+        <article class="project-card">
+          <h4>Simple Chatbot</h4>
+          <p>A rule-based chatbot prototype implemented as a console app for learning NLP basics.</p>
+          <p class="project-meta">Tech: Python</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education Table -->
+    <section id="education" class="education container">
+      <h3>Education</h3>
+      <div class="table-wrap">
+        <table>
+          <caption>Academic qualifications</caption>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Degree / Exam</th>
+              <th>Institution</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2023–Present</td>
+              <td>B.Sc. in Computer Science</td>
+              <td>American International University-Bangladesh (AIUB)</td>
+              <td>Ongoing</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>Higher Secondary Certificate (HSC)</td>
+              <td>XYZ College</td>
+              <td>GPA: 4.60</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>Secondary School Certificate (SSC)</td>
+              <td>ABC High School</td>
+              <td>GPA: 5.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills container">
+      <h3>Skills</h3>
+      <div class="skill-list">
+        <div class="skill">
+          <strong>Frontend</strong>
+          <span>HTML • CSS • JavaScript • Responsive Design</span>
+        </div>
+        <div class="skill">
+          <strong>Programming</strong>
+          <span>C • C++ • Python</span>
+        </div>
+        <div class="skill">
+          <strong>Tools</strong>
+          <span>Git • VS Code • Chrome DevTools</span>
+        </div>
+        <div class="skill">
+          <strong>Other</strong>
+          <span>OpenGL (GLUT) • Algorithms • Data Structures</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section id="contact" class="contact container">
+      <h3>Contact</h3>
+      <p>If you'd like to chat about an internship or a project, send a message below — I'll reply within a few days.</p>
+
+      <form id="contactForm" class="contact-form" action="#" method="post" novalidate>
+        <label>
+          <span>Full name</span>
+          <input type="text" name="name" id="name" placeholder="Your full name" required>
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" id="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea name="message" id="message" rows="6" placeholder="Brief message" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send message</button>
+          <button type="reset" class="btn outline">Reset</button>
+        </div>
+
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </form>
+
+      <div class="socials">
+        <a href="#" aria-label="GitHub profile" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" aria-label="LinkedIn profile" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" aria-label="Twitter profile" target="_blank" rel="noopener">Twitter</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Touhid Islam — Built with semantic HTML5. <a href="privacy.html">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // small interactive helpers (form validation + nav toggle)
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+
+    // Basic client-side form handling
+    const form = document.getElementById('contactForm');
+    const note = document.getElementById('formNote');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // simple validation is done by browser; show friendly message
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+
+      if (!name || !email || !message) {
+        note.textContent = 'Please fill in all fields.';
+        note.style.color = '#b00020';
+        return;
+      }
+
+      // In a real site you would send the data to a server or API.
+      // For this assignment we'll show a success message and reset.
+      note.textContent = 'Thanks! Your message has been recorded (local demo).';
+      note.style.color = 'green';
+      form.reset();
+    });
+  </script>
+</body>
+</html>

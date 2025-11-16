@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+    <link rel="stylesheet" href="UniversityAdmission.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>University Admission Form</h1>
+            <p class="subtitle">Complete this form to apply for admission to our university</p>
+        </header>
+
+        <form id="admissionForm">
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName" class="required">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required maxlength="50">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName" class="required">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required maxlength="50">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dateOfBirth" class="required">Date of Birth</label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="required">Gender</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email" class="required">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone" class="required">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required maxlength="15">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address" class="required">Address</label>
+                    <textarea id="address" name="address" rows="3" required maxlength="200"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Academic Information Section -->
+            <fieldset>
+                <legend>Academic Information</legend>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="highSchool" class="required">High School Name</label>
+                        <input type="text" id="highSchool" name="highSchool" required maxlength="100">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="graduationYear" class="required">Graduation Year</label>
+                        <input type="number" id="graduationYear" name="graduationYear" min="1980" max="2030" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="gpa" class="required">GPA (out of 4.0)</label>
+                        <input type="number" id="gpa" name="gpa" min="0" max="4" step="0.01" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="satScore">SAT Score</label>
+                        <input type="number" id="satScore" name="satScore" min="400" max="1600">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="extracurricular">Extracurricular Activities</label>
+                    <textarea id="extracurricular" name="extracurricular" rows="3" maxlength="300"></textarea>
+                    <p class="hint">List any clubs, sports, volunteer work, or other activities you participated in</p>
+                </div>
+            </fieldset>
+
+            <!-- Preferred Department Section -->
+            <fieldset>
+                <legend>Preferred Department & Interests</legend>
+                
+                <div class="form-group">
+                    <label for="department" class="required">Preferred Department</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select a department</option>
+                        <option value="computerScience">Computer Science</option>
+                        <option value="electricalEngineering">Electrical Engineering</option>
+                        <option value="mechanicalEngineering">Mechanical Engineering</option>
+                        <option value="civilEngineering">Civil Engineering</option>
+                        <option value="businessAdministration">Business Administration</option>
+                        <option value="economics">Economics</option>
+                        <option value="psychology">Psychology</option>
+                        <option value="biology">Biology</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="required">Areas of Interest</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="programming" name="interests" value="programming" required>
+                            <label for="programming">Programming</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="robotics" name="interests" value="robotics">
+                            <label for="robotics">Robotics</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="networking" name="interests" value="networking">
+                            <label for="networking">Networking</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="ai" name="interests" value="ai">
+                            <label for="ai">Artificial Intelligence</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="dataScience" name="interests" value="dataScience">
+                            <label for="dataScience">Data Science</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="cybersecurity" name="interests" value="cybersecurity">
+                            <label for="cybersecurity">Cybersecurity</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="additionalInfo">Additional Information</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="3" maxlength="300"></textarea>
+                    <p class="hint">Any additional information you would like to share with the admission committee</p>
+                </div>
+            </fieldset>
+
+            <!-- Document Upload Section -->
+            <fieldset>
+                <legend>Document Upload</legend>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="transcript" class="required">High School Transcript</label>
+                        <input type="file" id="transcript" name="transcript" class="file-input" accept=".pdf,.doc,.docx" required>
+                        <p class="hint">Accepted formats: PDF, DOC, DOCX (Max: 5MB)</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="idProof" class="required">ID Proof</label>
+                        <input type="file" id="idProof" name="idProof" class="file-input" accept=".pdf,.jpg,.jpeg,.png" required>
+                        <p class="hint">Accepted formats: PDF, JPG, PNG (Max: 2MB)</p>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="recommendation">Recommendation Letter</label>
+                        <input type="file" id="recommendation" name="recommendation" class="file-input" accept=".pdf,.doc,.docx">
+                        <p class="hint">Optional: Letter from teacher or mentor</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="essay" class="required">Personal Essay</label>
+                        <input type="file" id="essay" name="essay" class="file-input" accept=".pdf,.doc,.docx" required>
+                        <p class="hint">Your personal statement (Max: 10MB)</p>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Submit and Reset Buttons -->
+            <div class="btn-group">
+                <button type="submit" class="submit-btn">Submit Application</button>
+                <button type="reset" class="reset-btn">Reset Form</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('admissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for submitting your application! We will review it and get back to you soon.');
+            // In a real application, you would send the form data to a server here
+        });
+    </script>
+</body>
+</html>
