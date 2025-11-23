@@ -1,0 +1,32 @@
+/* Step 6 & 7: Set background color and ensure full-width block display */
+nav {
+    background-color: #333333; /* Dark grey background */
+    display: block;            /* Spans full-page width [cite: 16, 17] */
+    text-align: center;        /* Centers the links (optional but looks better) */
+    padding: 10px 0;           /* vertical padding for the bar itself */
+}
+
+/* Styling the links */
+nav a {
+    /* Step 2: Display links horizontally */
+    display: inline-block;     /*  */
+    
+    /* Step 4: Remove underlines */
+    text-decoration: none;     /* [cite: 14] */
+    
+    /* Step 3: Add padding and margin */
+    padding: 14px 20px;        /* Internal spacing  */
+    margin: 0 5px;             /* External spacing between links  */
+    
+    /* Basic styling for visibility */
+    color: white;              
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Step 5: Add hover effects */
+nav a:hover {
+    background-color: #ddd;    /* Changes background on hover  */
+    color: black;              /* Changes text color on hover  */
+    border-radius: 4px;        /* Optional: adds rounded corners */
+}
