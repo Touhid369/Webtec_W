@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+
+<body>
+
+    <h2>Library Management System</h2>
+
+    <div class="container">
+        <label>Book Title:</label>
+        <input type="text" id="title" placeholder="Enter book title">
+
+        <label>Publication Year:</label>
+        <input type="text" id="year" placeholder="Enter publication year">
+
+        <button onclick="addBook()">Add Book</button>
+
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="library.js"></script>
+</body>
+</html>
